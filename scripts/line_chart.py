@@ -33,7 +33,7 @@ def line_tab(covid_data):
 
     def make_plot(source, title):
         
-        plot = figure(x_axis_type="datetime", width=1000)
+        plot = figure(x_axis_type="datetime", width=800)
         plot.add_tools(HoverTool(
             tooltips=[
                 ("Province", "@Province"),

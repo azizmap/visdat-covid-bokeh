@@ -27,7 +27,7 @@ def bar_tab(covid_data):
 
     def make_plot(source, title):
         
-        plot = figure(width=1000, height=750, x_range = source.data["name"])
+        plot = figure(width=800, height=400, x_range = source.data["name"])
         plot.vbar(x='name', source=source, width=0.5, bottom=0, top='value', color="red")
 
         labels = LabelSet(x='name', y='value', text='value',x_offset=5, y_offset=5, source=source, render_mode='canvas')
